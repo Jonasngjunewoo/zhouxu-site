@@ -25,4 +25,4 @@ pnpm dev
 
 ## 预约表单
 
-当前页面中的预约入口指向 `#waitlist` 的内置表单区。上线前可以把 `app/page.tsx` 里的 `mailto:` 链接替换为 Tally 或 Google Form 链接。
+当前页面中的预约入口已指向 Tally 表单：`https://tally.so/r/WOj0ZR`。如需更换表单，修改 `app/page.tsx` 里的 `waitlistUrl`。

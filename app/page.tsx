@@ -21,6 +21,8 @@ const features = [
   ["Weekly Review", "每周重新看见自己：哪里前进了，哪里卡住了。"],
 ];
 
+const waitlistUrl = "https://tally.so/r/WOj0ZR";
+
 export default function Home() {
   return (
     <main className="page-shell">
@@ -35,13 +37,15 @@ export default function Home() {
           <a className="focus-ring rounded" href="#features">
             功能
           </a>
-          <a className="focus-ring rounded" href="#waitlist">
+          <a className="focus-ring rounded" href={waitlistUrl} rel="noreferrer" target="_blank">
             预约
           </a>
         </nav>
         <a
           className="focus-ring rounded-full border border-[var(--line)] bg-[var(--paper)] px-4 py-2 text-sm font-medium shadow-sm transition hover:border-[var(--sage)]"
-          href="#waitlist"
+          href={waitlistUrl}
+          rel="noreferrer"
+          target="_blank"
         >
           预约体验
         </a>
@@ -63,7 +67,9 @@ export default function Home() {
           <div className="mt-10 flex flex-col gap-3 sm:flex-row">
             <a
               className="focus-ring rounded-full bg-[var(--ink)] px-6 py-3 text-center text-sm font-semibold text-white shadow-[0_14px_40px_rgba(31,35,32,0.18)] transition hover:bg-[#111411]"
-              href="#waitlist"
+              href={waitlistUrl}
+              rel="noreferrer"
+              target="_blank"
             >
               加入第一批预约
             </a>
@@ -189,53 +195,23 @@ export default function Home() {
               </p>
             </div>
             <div className="p-8 md:p-12">
-              <form action="mailto:hello@zhouxu.app" className="grid gap-5" method="post">
-                <label className="grid gap-2 text-sm font-semibold">
-                  姓名 / 昵称
-                  <input
-                    className="focus-ring rounded border border-[var(--line)] bg-white px-4 py-3 font-normal"
-                    name="name"
-                    placeholder="Jonas"
-                    type="text"
-                  />
-                </label>
-                <label className="grid gap-2 text-sm font-semibold">
-                  邮箱
-                  <input
-                    className="focus-ring rounded border border-[var(--line)] bg-white px-4 py-3 font-normal"
-                    name="email"
-                    placeholder="you@example.com"
-                    type="email"
-                  />
-                </label>
-                <label className="grid gap-2 text-sm font-semibold">
-                  你的身份
-                  <select className="focus-ring rounded border border-[var(--line)] bg-white px-4 py-3 font-normal" name="role">
-                    <option>留学生</option>
-                    <option>年轻创业者</option>
-                    <option>内容创作者</option>
-                    <option>自由职业者</option>
-                    <option>其他</option>
-                  </select>
-                </label>
-                <label className="grid gap-2 text-sm font-semibold">
-                  你最想用宙序整理什么？
-                  <textarea
-                    className="focus-ring min-h-28 rounded border border-[var(--line)] bg-white px-4 py-3 font-normal"
-                    name="message"
-                    placeholder="例如：学业、兼职、创业项目和健康节奏总是混在一起。"
-                  />
-                </label>
-                <button
-                  className="focus-ring mt-2 rounded-full bg-[var(--ink)] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#111411]"
-                  type="submit"
-                >
-                  发送预约信息
-                </button>
-                <p className="text-sm leading-6 text-[var(--muted)]">
-                  上线前建议把这里替换成 Tally 或 Google Form，这样预约信息会自动进入表格。
+              <div className="flex h-full flex-col justify-center">
+                <p className="text-sm font-semibold text-[var(--sage)]">Tally Waitlist</p>
+                <h3 className="mt-4 text-3xl font-semibold tracking-normal text-[var(--ink)]">
+                  用 1 分钟留下你的预约信息。
+                </h3>
+                <p className="mt-5 text-base leading-7 text-[var(--muted)]">
+                  表单会收集姓名、邮箱、身份和你最想整理的人生部门。第一批测试邀请会优先从这里发出。
                 </p>
-              </form>
+                <a
+                  className="focus-ring mt-8 inline-flex w-fit rounded-full bg-[var(--ink)] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#111411]"
+                  href={waitlistUrl}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  打开预约表单
+                </a>
+              </div>
             </div>
           </div>
         </div>
