@@ -28,7 +28,7 @@ export default function Home() {
     <main className="page-shell">
       <header className="container flex items-center justify-between py-6">
         <a className="focus-ring rounded text-[18px] font-semibold tracking-normal" href="#">
-          宙序 Zhouxu
+          宙序 ORIX
         </a>
         <nav className="hidden items-center gap-8 text-sm text-[var(--muted)] md:flex">
           <a className="focus-ring rounded" href="#idea">
@@ -218,7 +218,7 @@ export default function Home() {
       </section>
 
       <footer className="container flex flex-col justify-between gap-3 border-t border-[var(--line)] py-8 text-sm text-[var(--muted)] md:flex-row">
-        <p>© 2026 宙序 Zhouxu. Life is under construction.</p>
+        <p>© 2026 宙序 ORIX. Life is under construction.</p>
         <p>知宙旗下数字系统 · CosmoSense Brand Management</p>
       </footer>
     </main>
