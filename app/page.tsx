@@ -43,11 +43,9 @@ export default function Home() {
         </nav>
         <a
           className="focus-ring rounded-full border border-[var(--line)] bg-[var(--paper)] px-4 py-2 text-sm font-medium shadow-sm transition hover:border-[var(--sage)]"
-          href={waitlistUrl}
-          rel="noreferrer"
-          target="_blank"
+          href="/login"
         >
-          预约体验
+          进入 ORIX
         </a>
       </header>
 
@@ -67,6 +65,12 @@ export default function Home() {
           <div className="mt-10 flex flex-col gap-3 sm:flex-row">
             <a
               className="focus-ring rounded-full bg-[var(--ink)] px-6 py-3 text-center text-sm font-semibold text-white shadow-[0_14px_40px_rgba(31,35,32,0.18)] transition hover:bg-[#111411]"
+              href="/login"
+            >
+              进入我的总控台
+            </a>
+            <a
+              className="focus-ring rounded-full border border-[var(--line)] bg-[rgba(255,253,247,0.72)] px-6 py-3 text-center text-sm font-semibold transition hover:border-[var(--sage)]"
               href={waitlistUrl}
               rel="noreferrer"
               target="_blank"
@@ -74,7 +78,7 @@ export default function Home() {
               加入第一批预约
             </a>
             <a
-              className="focus-ring rounded-full border border-[var(--line)] bg-[rgba(255,253,247,0.72)] px-6 py-3 text-center text-sm font-semibold transition hover:border-[var(--sage)]"
+              className="focus-ring rounded-full border border-transparent px-6 py-3 text-center text-sm font-semibold text-[var(--muted)] transition hover:text-[var(--ink)]"
               href="#features"
             >
               看看它怎么工作
